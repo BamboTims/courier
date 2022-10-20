@@ -1,0 +1,13 @@
+.custombtn{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all ease .4s;
+
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}

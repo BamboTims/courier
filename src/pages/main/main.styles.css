@@ -1,0 +1,215 @@
+.header {
+  height: 100vh;
+  padding: 2rem;
+  background-image: url("../../asset//trinity-treft-UL9awo4i_4w-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.header-text {
+  width: 50%;
+}
+.header-text h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.header-text p {
+  font-size: 2rem;
+}
+.header-track {
+  align-self: center;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.header-track button {
+  height: 7rem;
+}
+.header-footer {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.header-footer div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.header-footer div p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+.header-footer div:not(:last-child) {
+  border-right: 2px solid black;
+}
+
+.nav {
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  cursor: pointer;
+}
+.nav-links li:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav-links li:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  .nav-links {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.section {
+  padding: 7rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+.section-heading {
+  margin-bottom: 3rem;
+}
+.section-heading h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.section-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-description div {
+  width: 50%;
+  height: 40rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.section-description div img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+  .section-description {
+    flex-direction: column;
+  }
+  .section-description div {
+    width: 100%;
+  }
+}
+.section-faqs {
+  width: 70%;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.cards .card {
+  position: relative;
+  border: 1px solid black;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.cards .card h4 {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+.cards .card svg {
+  height: 10rem;
+}
+.cards .card img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.cards .card span {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  color: white;
+  z-index: 10;
+}
+@media screen and (max-width: 800px) {
+  .cards {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.util-pad {
+  padding: 1rem 2rem;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer h5 {
+  font-size: 1.8rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.footer .nav-links {
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .footer .nav-links {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.styles.css.map */

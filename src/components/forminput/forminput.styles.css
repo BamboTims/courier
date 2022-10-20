@@ -1,0 +1,31 @@
+.field {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.field svg {
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, 65%);
+}
+
+.forminput {
+  width: 100%;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  border: 3px solid grey;
+}
+.forminput:focus {
+  outline: 0;
+  border: 3px solid black;
+}
+.forminput::-moz-placeholder {
+  font-size: 1.6rem;
+}
+.forminput:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.forminput::placeholder {
+  font-size: 1.6rem;
+}/*# sourceMappingURL=forminput.styles.css.map */

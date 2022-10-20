@@ -1,0 +1,39 @@
+.faq {
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+}
+.faq-quest {
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-quest div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  background-color: transparent;
+  transition: all ease 0.4s;
+}
+.faq-quest div:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.faq-ans {
+  text-align: left;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+.faq:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
+}/*# sourceMappingURL=faq.styles.css.map */

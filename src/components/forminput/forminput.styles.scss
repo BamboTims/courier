@@ -1,0 +1,28 @@
+.field{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    svg{
+        height: 3rem;
+        position: absolute;
+        right: 0;
+        transform: translate(-50%, 65%);
+    }
+}
+
+.forminput{
+    width: 100%;
+    padding: 2rem 3rem; 
+    font-size: 2rem;
+    border: 3px solid grey;
+
+    &:focus{
+        outline: 0;
+        border: 3px solid black;
+    }
+
+    &::placeholder{
+        font-size: 1.6rem;
+    }
+}
