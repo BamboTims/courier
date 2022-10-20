@@ -1,7 +1,7 @@
 .header{
     height: 100vh;
     padding: 2rem;
-    background-image: url("../../asset//trinity-treft-UL9awo4i_4w-unsplash.jpg");
+    background-image: url("../../asset/tinywow_trinity-treft-UL9awo4i_4w-unsplash.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -29,6 +29,10 @@
         button{
             height: 7rem;
         }
+
+        @media screen and (max-width:800px) {
+            width: 90%;
+        }
     }
 
     &-footer{
@@ -52,6 +56,10 @@
             &:not(:last-child){
                 border-right: 2px solid black;
             }
+        }
+
+        @media screen and (max-width:600px) {
+            width: 80%;
         }
 }
 
@@ -145,6 +153,10 @@
 
     &-faqs{
         width: 70%;
+
+        @media screen and (max-width:650px) {
+            width: 90%;
+        }
     }
 }
 

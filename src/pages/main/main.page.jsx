@@ -2,6 +2,7 @@ import React from 'react';
 import CustomButton from '../../components/custombutton/custombutton.component';
 import FormInput from '../../components/forminput/forminput.component';
 import Faq from '../../components/faq/faq.component';
+import Login from '../../components/login button/loginbutton.component';
 import {ReactComponent as Truck} from "../../asset/delivery-svgrepo-com.svg";
 import {ReactComponent as Box} from "../../asset/package-svgrepo-com.svg";
 import {ReactComponent as Map} from "../../asset/map-svgrepo-com.svg";
@@ -26,7 +27,7 @@ const MainPage = () => {
                     <li><a href='#about'>About Us</a></li>
                 </ul>
                 <div className="nav-user">
-                <CustomButton>Sign Up</CustomButton>
+                <Login>Sign Up</Login>
             </div>
             </nav>
 

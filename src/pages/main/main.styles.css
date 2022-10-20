@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   padding: 2rem;
-  background-image: url("../../asset//trinity-treft-UL9awo4i_4w-unsplash.jpg");
+  background-image: url("../../asset/tinywow_trinity-treft-UL9awo4i_4w-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,6 +29,11 @@
 .header-track button {
   height: 7rem;
 }
+@media screen and (max-width: 800px) {
+  .header-track {
+    width: 90%;
+  }
+}
 .header-footer {
   width: 50%;
   align-self: center;
@@ -48,6 +53,11 @@
 }
 .header-footer div:not(:last-child) {
   border-right: 2px solid black;
+}
+@media screen and (max-width: 600px) {
+  .header-footer {
+    width: 80%;
+  }
 }
 
 .nav {
@@ -130,6 +140,11 @@
 }
 .section-faqs {
   width: 70%;
+}
+@media screen and (max-width: 650px) {
+  .section-faqs {
+    width: 90%;
+  }
 }
 
 .cards {
