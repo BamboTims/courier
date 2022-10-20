@@ -1,14 +1,17 @@
 import React from 'react';
 import Login from '../login button/loginbutton.component';
+import {ReactComponent as Close} from "../../asset/close-svgrepo-com.svg";
 import "./sidenav.styles.css";
 
 const Sidenav = (props) => {
     const {hide, toggle} = props;
     return (
-        <div className={`overlay ${hide}`} onClick={() => (hide === "hide")?toggle("show"):toggle("hide")}>
+        <div className={hide}>
+        <div className={`overlay`} onClick={()=>toggle("hide")}/>
             <aside className="aside">
             <div className="aside-heading">
                 <h3>JET EXPRESS</h3>
+                <div onClick={()=>toggle("hide")}><Close/></div>
             </div>
 
             <ul className="aside-links">
@@ -22,7 +25,7 @@ const Sidenav = (props) => {
                 <Login/>
             </div>
             </aside>
-        </div>
+            </div>
     )
 }
 

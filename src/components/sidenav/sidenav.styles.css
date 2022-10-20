@@ -11,7 +11,7 @@
 
 .aside {
   width: 40rem;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   height: 100%;
@@ -21,13 +21,29 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 1000;
-  transition: all 0.4s ease-in;
+  -webkit-animation: slideIn ease-in 0.4s forwards;
+          animation: slideIn ease-in 0.4s forwards;
 }
 .aside-heading {
+  width: 100%;
   align-self: flex-start;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aside-heading div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all ease 0.4s;
+}
+.aside-heading div:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .aside-links {
   list-style: none;
@@ -47,4 +63,22 @@
 }
 .aside-footer button {
   width: 100%;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40rem;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40rem;
+  }
 }/*# sourceMappingURL=sidenav.styles.css.map */

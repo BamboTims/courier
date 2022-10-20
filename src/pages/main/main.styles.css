@@ -230,7 +230,8 @@
   gap: 1rem;
 }
 @media screen and (max-width: 800px) {
-  .footer .nav-links {
+  .footer .nav-links li {
+    display: inline-block;
     opacity: 1;
     visibility: visible;
   }

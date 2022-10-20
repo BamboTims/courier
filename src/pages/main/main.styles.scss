@@ -255,8 +255,11 @@
         gap: 1rem;
 
         @media screen and (max-width:800px) {
-            opacity: 1;
-            visibility: visible;
+            li{
+                display: inline-block;
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
 
