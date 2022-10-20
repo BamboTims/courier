@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CustomButton from '../../components/custombutton/custombutton.component';
 import FormInput from '../../components/forminput/forminput.component';
 import Faq from '../../components/faq/faq.component';
@@ -6,13 +6,16 @@ import Login from '../../components/login button/loginbutton.component';
 import {ReactComponent as Truck} from "../../asset/delivery-svgrepo-com.svg";
 import {ReactComponent as Box} from "../../asset/package-svgrepo-com.svg";
 import {ReactComponent as Map} from "../../asset/map-svgrepo-com.svg";
+import {ReactComponent as Hamburger} from "../../asset/hamburger-menu-svgrepo-com.svg";
 import Delivery from "../../asset/rosebox-BFdSCxmqvYc-unsplash.jpg";
 import Airplane from "../../asset/kevin-woblick-UdUbSPwbv2c-unsplash.jpg";
 import Road from "../../asset/maksym-tymchyk-jm70AzcV5AQ-unsplash.jpg";
 import Boat from "../../asset/venti-views-1cqIcrWFQBI-unsplash.jpg";
 import "./main.styles.css";
+import Sidenav from '../../components/sidenav/sidenav.components';
 
 const MainPage = () => {
+    const [hide, toggleHide] = useState("hide");
     return(
         <>
         <header id='home' className="header">
@@ -28,6 +31,9 @@ const MainPage = () => {
                 </ul>
                 <div className="nav-user">
                 <Login>Sign Up</Login>
+            </div>
+            <div className="nav-side" onClick={() => (hide === "hide")?toggleHide("show"):toggleHide("hide")}>
+                <Hamburger/>
             </div>
             </nav>
 
@@ -158,6 +164,7 @@ const MainPage = () => {
                 <h5>Connect with Us!</h5>
             </div>
         </footer>
+        <Sidenav hide={hide} toggle={toggleHide}/>
         </>
     )
 

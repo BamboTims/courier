@@ -1,0 +1,59 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.8);
+    transition: all ease-in .4s;
+}
+
+.aside{
+    width: 40rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 2rem 4rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: all .4s ease-in;
+
+    &-heading{
+        align-self: flex-start;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &-links{
+        list-style: none;
+
+        li{
+            font-size: 4rem;
+
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+
+    &-footer{
+        width: 50%;
+        justify-self: flex-end;
+
+        button{
+            width: 100%;
+        }
+    }
+    
+}
