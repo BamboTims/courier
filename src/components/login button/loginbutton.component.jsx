@@ -5,7 +5,7 @@ const Login = () => {
     const {user, loginWithRedirect, logout} = useAuth0();
 
     return (
-        <button onClick={() => (user)?logout({returnTo : "/"}):loginWithRedirect()} className="custombtn">
+        <button onClick={() => (user)?logout({returnTo : window.location.origin}):loginWithRedirect()} className="custombtn">
             {(user)?"Log Out":"Log In"}
         </button>
     )
