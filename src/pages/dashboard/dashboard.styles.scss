@@ -100,3 +100,11 @@ p {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width:800px) {
+   .dashboard{
+    &-track, &-shipment, &-history{
+        width: 100%;
+    }
+   }
+}

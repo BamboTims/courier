@@ -84,4 +84,10 @@ p {
   display: block;
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard-track, .dashboard-shipment, .dashboard-history {
+    width: 100%;
+  }
 }/*# sourceMappingURL=dashboard.styles.css.map */
