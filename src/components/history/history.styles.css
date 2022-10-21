@@ -1,0 +1,50 @@
+.history {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+.history-icon {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.history-icon:not(:last-child) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.history-icon svg {
+  height: 3rem;
+}
+.history-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.history-info span {
+  display: block;
+}
+.history-main {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.history-sub {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.enroute {
+  fill: #F86624;
+}
+
+.confirmed {
+  fill: #007CBE;
+}
+
+.delivered {
+  fill: #00AF54;
+}/*# sourceMappingURL=history.styles.css.map */
