@@ -24,15 +24,6 @@
   font-size: 3rem;
   font-weight: 700;
 }
-.dashboard-header__img {
-  height: 5rem;
-  width: 5rem;
-}
-.dashboard-header__img img {
-  border-radius: 100%;
-  width: 100%;
-  background-position: center;
-}
 .dashboard-main {
   padding: 3rem 0;
   display: flex;

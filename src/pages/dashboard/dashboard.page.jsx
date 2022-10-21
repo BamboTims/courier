@@ -19,9 +19,6 @@ const Dashboard = () => {
                 <span className="sub">{date.getDate()} {month[date.getMonth()]}, {date.getFullYear()}</span>
                 <span className="main">Hi {user?.name || "User"}!</span>
                 </div>
-                <div className="dashboard-header__img">
-                    {(user)? <img src={user.picture} alt={user.name}/>:<User/> }
-                </div>
                 <div>
                     <Login/>
                 </div>
