@@ -1,6 +1,5 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { ReactComponent as User } from '../../asset/user-svgrepo-com.svg';
 import { ReactComponent as Redirect } from '../../asset/redirect-svgrepo-com.svg';
 import { ReactComponent as Ship } from '../../asset/ship-svgrepo-com.svg';
 import FormInput from "../../components/forminput/forminput.component";
@@ -17,7 +16,7 @@ const Dashboard = () => {
             <div className="dashboard-header">
                 <div>
                 <span className="sub">{date.getDate()} {month[date.getMonth()]}, {date.getFullYear()}</span>
-                <span className="main">Hi {user?.name || "User"}!</span>
+                <span className="main">Hi {user?.name.split(" ")[0] || "User"}!</span>
                 </div>
                 <div>
                     <Login/>
