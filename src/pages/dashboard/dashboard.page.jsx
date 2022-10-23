@@ -72,7 +72,7 @@ const Dashboard = () => {
 
         <div className="dashboard-history">
           <h3>Tracking history</h3>
-          <History number={userId} status="delivered" />
+          <History number={userId || "FGHI876782"} status="delivered" />
           <History number="FGHI67R3E3" status="confirmed" />
           <History number="FGHI67R3E3" status="enroute" />
         </div>
