@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import CustomButton from "../../components/custombutton/custombutton.component";
 import FormInput from "../../components/forminput/forminput.component";
 import Faq from "../../components/faq/faq.component";
@@ -13,6 +12,7 @@ import Road from "../../asset/maksym-tymchyk-jm70AzcV5AQ-unsplash.jpg";
 import Boat from "../../asset/venti-views-1cqIcrWFQBI-unsplash.jpg";
 import Sidenav from "../../components/sidenav/sidenav.components";
 import "./main.styles.css";
+import Login from "../../components/login button/loginbutton.component";
 
 const MainPage = () => {
   const [hide, toggleHide] = useState("hide");
@@ -36,9 +36,7 @@ const MainPage = () => {
             </li>
           </ul>
           <div className="nav-user">
-            <Link to="/dashboard">
-              <CustomButton>Get Started</CustomButton>
-            </Link>
+            <Login />
           </div>
           <div
             className="nav-side"

@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useMutation } from "../../convex/_generated/react";
-import { ConvexProviderWithAuth0 } from "convex/react-auth0";
-import { ConvexReactClient } from "convex/react";
-import convexConfig from "../../convex.json";
-import clientConfig from "../../convex/_generated/clientConfig";
 import { useAuth0 } from "@auth0/auth0-react";
 import { ReactComponent as Redirect } from "../../asset/redirect-svgrepo-com.svg";
 import { ReactComponent as Ship } from "../../asset/ship-svgrepo-com.svg";
@@ -11,9 +7,6 @@ import FormInput from "../../components/forminput/forminput.component";
 import Login from "../../components/login button/loginbutton.component";
 import History from "../../components/history/history.components";
 import "./dashboard.styles.css";
-
-const convex = new ConvexReactClient(clientConfig);
-const authInfo = convexConfig.authInfo[0];
 
 const Dashboard = () => {
   const [userId, setUserId] = useState(null);
@@ -88,16 +81,4 @@ const Dashboard = () => {
   );
 };
 
-const AuthDashboard = () => {
-  return (
-    <ConvexProviderWithAuth0
-      client={convex}
-      authInfo={authInfo}
-      loggedOut={<Login />}
-    >
-      <Dashboard />
-    </ConvexProviderWithAuth0>
-  );
-};
-
-export default AuthDashboard;
+export default Dashboard;
