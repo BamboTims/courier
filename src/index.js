@@ -14,8 +14,8 @@ root.render(
     <ConvexProvider client={convex}>
       <Auth0Provider
         domain="dev-hhklvyn3gxkfba7d.us.auth0.com"
-        clientId="UwalIF2yINQuc3zUXvMKVpG5LSsWSFTx"
-        redirectUri={`${window.location.origin}/dashboard`}
+        clientId="8Nfxq6DqEjOR7VTNTjwm7h8pfDNVDwj7"
+        redirectUri={window.location.origin}
       >
         <App />
       </Auth0Provider>
